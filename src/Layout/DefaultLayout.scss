@@ -1,0 +1,67 @@
+.product {
+  &Container {
+    padding: 8px;
+    width: 120px;
+    flex: 1;
+    width: 120px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    &:first-child {
+      margin-right: 8px;
+    }
+
+    button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 100%;
+      padding: 9px 12px;
+      margin: 5px 0;
+      border: 2px solid red;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      color: red;
+      background-color: #fff;
+    }
+  }
+
+  &Img {
+    height: 150px;
+    img {
+      height: 150px;
+    }
+  }
+
+  &Name {
+    color: #8a8c96;
+    font-size: 1.3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &Stocks {
+    font-size: 0.9rem;
+    color: #eca043;
+  }
+
+  &NormalPrice {
+    font-size: 1.6rem;
+    color: red;
+    font-weight: 600;
+  }
+
+  &Discount {
+    display: flex;
+    &Price {
+      text-decoration: line-through;
+      color: gray;
+      margin-right: 12px;
+    }
+    &Percent {
+      color: red;
+    }
+  }
+}

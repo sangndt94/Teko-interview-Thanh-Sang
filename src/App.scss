@@ -1,0 +1,63 @@
+.app {
+  padding: 100px;
+}
+
+.mainProduct {
+  &-img {
+    img {
+      display: block;
+      height: 450px;
+      width: 50%;
+    }
+  }
+
+  &Details {
+    padding: 20px;
+  }
+
+  &Name {
+    margin-top: 12px;
+    font-weight: bold;
+  }
+
+  &Seller {
+    a {
+      color: #70baff;
+      text-decoration: none;
+    }
+  }
+
+  &NormalPrice {
+    font-size: 32px;
+    color: red;
+    font-weight: 600;
+  }
+
+  &Discount {
+    display: flex;
+    &Percent {
+      margin-left: 8px;
+      color: red;
+    }
+
+    &Price {
+      text-decoration: line-through;
+      color: #ccc;
+    }
+  }
+}
+
+.products {
+  padding: 24px;
+
+  p {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+
+  &Container {
+    display: flex;
+  }
+}
